@@ -1,0 +1,28 @@
+.pokemonList
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.containerList
+{
+    text-align: center;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button{
+    margin: 10px;
+}

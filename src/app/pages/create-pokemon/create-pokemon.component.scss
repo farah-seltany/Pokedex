@@ -1,0 +1,50 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+form button
+{
+    width: 30%;
+    align-self: center;
+    height: 30px;
+}
+
+.container
+{
+    width: 100%;
+    
+}
+
+.error
+{
+    color: indianred;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+img{
+    width: 30%;
+}
+
+button{
+    margin: 10px;
+}
+
+.container
+{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+        <div>
+                <img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png">
+    <div>
+        </div>
+        
+            <app-pokemon-list (pokemonClick)="onSelectedPokemon($event)"></app-pokemon-list>
+    </div>
+   <div>
+        <app-pokemon-detail [pokemonToDisplay]="pokemonToDisplay"></app-pokemon-detail>
+   </div>
+  
+</div>
+<router-outlet></router-outlet>

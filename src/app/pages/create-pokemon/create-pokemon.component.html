@@ -1,0 +1,30 @@
+<div class="container">
+        <div>
+                <img src="http://pluspng.com/img-png/pokemon-logo-png-pokemon-logo-png-2000.png">
+        <div>
+        <div class="navigation">
+                <button><a [routerLink]="['/liste']">Liste des Pokémons</a></button>
+                <button><a [routerLink]="['/create']">Ajouter un Pokémon</a></button>
+        </div>
+        <form (submit)="createForm.valid && addPokemon(pokemon)" #createForm="ngForm" > 
+                    <label>Nom : </label>
+                    <input type="text" name="name" [(ngModel)]="pokemon.name" required #nameRef="ngModel"><br/>
+                   
+                    <div *ngIf="createForm.submitted && nameRef.errors?.required" class="error">
+                        Merci de renseigner le nom de ton Pokémon
+                    </div><br/>
+        
+                    <label>Photo :</label>
+                    <input type="text" name="url" [(ngModel)]="pokemon.url" required #urlRef="ngModel"><br/>
+                   
+                    <div *ngIf="createForm.submitted && urlRef.errors?.required" class="error">
+                        Merci d'enregistrer la photo de ton Pokémon
+                    </div><br/>
+        
+                    <label>Description :</label>
+                    <input type="text" name="desc" [(ngModel)]="pokemon.desc" #urlRef="ngModel"><br/>
+        
+            <button>Ajouter</button>
+        </form>
+        
+</div>
